@@ -101,3 +101,49 @@ s,i,em{font-style:normal;text-decoration:none;}
     left: 8px;
     top:5px;
 }
+/*头部导航结束*/
+
+/*topbanner开始*/
+.topbanner{
+    background-color: #8A25C6;
+}
+.top{
+    position: relative;
+}
+/*topbanner结束*/
+
+.logo {
+    width: 360px;
+    height: 75px;
+    float: left;
+    background: url(../images/logo.png) no-repeat 0 25px;
+    position: relative;
+    padding-top: 25px;
+}
+.jd-a{
+    display: inline-block;
+    width: 270px;
+    height: 60px;
+    text-indent:-2000em;
+}
+.db11 {
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    top: 10px;
+    left: 168px;
+}
+.search {
+    width: 538px;
+    height: 75px;
+    background-color: purple;
+    float: left;
+    padding-top: 25px;
+}
+.car {
+    width: 139px;
+    height: 34px;
+    background-color: blue;
+    float: right;
+    margin:25px 65px 0 0 ;
+}
