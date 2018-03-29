@@ -194,3 +194,35 @@ s,i,em{font-style:normal;text-decoration:none;}
     top: -5px;
     border-radius: 7px 7px 7px 0;
 }
+.hotwords {
+    width:500px;
+    padding:7px 0;
+    float:left;
+}
+.hotwords a {
+    margin-right:6px;
+}
+.slogen {
+    height:54px;
+    padding:20px 0;
+    background-color:#F5F5F5;
+    position:relative;
+}
+.item {
+    width:302px;
+    position:absolute;
+    top:20px;
+    left:50%;
+}
+.slogen1 {
+    margin-left:-608px;
+}
+.slogen2 {
+    margin-left:-304px;
+}
+.slogen3 {
+    margin-left:2px;
+}
+.slogen4 {
+    margin-left:304px;
+}
