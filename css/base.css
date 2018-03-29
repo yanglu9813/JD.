@@ -202,3 +202,8 @@ s,i,em{font-style:normal;text-decoration:none;}
 .hotwords a {
     margin-right:6px;
 }
+.slogen {
+    height:54px;
+    padding:20px 0;
+    background-color:#fff;
+}
