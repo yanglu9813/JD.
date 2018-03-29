@@ -194,3 +194,12 @@ s,i,em{font-style:normal;text-decoration:none;}
     top: -5px;
     border-radius: 7px 7px 7px 0;
 }
+.hotwords {
+    width:500px;
+    padding:7px 0;
+    background-color:pink;
+    float:left;
+}
+.hotwords a {
+    margin-right:8px;
+}
