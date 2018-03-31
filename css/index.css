@@ -57,15 +57,25 @@
     left: 0;
 }
 .slider .arrow-r {
-    right: 0;
+    right: 0px;
 }
-.slider .arrow {
-
+.slider .arrow-l:hover,
+.slider .arrow-r:hover {
+    background:rgba(0,0,0,0.4);
+    color: #fff;
 }
 .main .news {
     width: 248px;
     height: 451px;
     border: 1px solid #E4E4E4;
     float: right;
-    margin-top: 12px;
+    margin: 12px 1px 0 0;
+}
+.main .news-top {
+    height: 200px;
+    background-color: purple;
+}
+.main .news-bottom {
+    height: 251px;
+    background-color: rebeccapurple;
 }
