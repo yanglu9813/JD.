@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.banner604 {
+    position: relative;
+}
+.banner604 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 604px;
+    background: url(../images/banner.jpg) no-repeat top center;
+}
+.main {
+    position: relative;
+}
+.main .slider {
+    width: 730px;
+    height: 453px;
+    margin: 12px 0 0 220px;
+    float: left;
+    position: relative;
+}
+.slider .circle {
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    margin-left: -66px;
+}
+.slider .circle li {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #3E3E3E;
+    float: left;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.slider .circle li.current {
+    background-color: #B61B1F;
+}
+.slider .arrow-l,
+.slider .arrow-r {
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    width: 28px;
+    height: 62px;
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    font: 500 18px/62px "宋体";
+    text-align: center;
+}
+.slider .arrow-l {
+    left: 0;
+}
+.slider .arrow-r {
+    right: 0;
+}
+.slider .arrow {
+
+}
+.main .news {
+    width: 248px;
+    height: 451px;
+    border: 1px solid #E4E4E4;
+    float: right;
+    margin-top: 12px;
+}
