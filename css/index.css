@@ -73,9 +73,39 @@
 }
 .main .news-top {
     height: 200px;
-    background-color: purple;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.main .news-top .dt,
+.main .news-bottom .dt{
+    height: 43px;
+    border-bottom: 1px dotted #E8E8E7;
+}
+.main .news-top .dt h3,
+.main .news-bottom .dt h3{
+    float: left;
+    font: 14px/43px "microsoft yahei";
+    color:#666;
+    padding-left: 15px;
+}
+.main .news-top .dt a {
+    float: right;
+    font: 13px/43px "宋体";
+    margin-right: 15px;
+}
+.main .news-top .dd ul {
+    padding: 8px 0 0 15px;
+}
+.main .news-top .dd ul li {
+    height: 28px;
 }
 .main .news-bottom {
     height: 251px;
-    background-color: rebeccapurple;
+}
+.main .news-bottom .dd li {
+    width: 62px;
+    height:70px;
+    border-left: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    float: left;
+    margin: -1px 0 0 -1px;
 }
