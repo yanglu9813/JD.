@@ -132,3 +132,48 @@
     height: 25px;
     background: url(../images/icon_lifeserv.png) no-repeat right top;
 }
+.todays {
+    position: relative;
+}
+.night {
+    margin: 10px 0 28px 0;
+}
+.night-l {
+    float: left;
+}
+.night-r {
+    width: 1000px;
+    height: 160px;
+    float: right;
+    position: relative;
+}
+.night-r ul {
+    width: 500%;
+}
+.night-r li {
+    float: left;
+    margin-right: 1px;
+}
+.night-r .arrow-l,
+.night-r .arrow-r {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 18px;
+    height: 40px;
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    font: 500 18px/40px "宋体";
+    text-align: center;
+}
+.night-r .arrow-l {
+    left: 0;
+}
+.night-r .arrow-r {
+    right: 0px;
+}
+.night-r .arrow-l:hover,
+.night-r .arrow-r:hover {
+    background:rgba(0,0,0,0.4);
+    color: #fff;
+}
