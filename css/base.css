@@ -110,6 +110,14 @@ s,i,em{font-style:normal;text-decoration:none;}
 .top{
     position: relative;
 }
+.top .close-banner {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    background: url(../images/close.png) no-repeat;
+}
 /*topbanner结束*/
 
 .logo {

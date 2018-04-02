@@ -52,10 +52,18 @@
 <!--京东的头部导航结束-->
 
 <!--京东的topbanner开始-->
-<div class="topbanner">
+<div class="topbanner" id="top_banner">
     <div class="top w">
         <img src="images/topbanner.jpg">
+        <a href="javascript:;" class="close-banner" id="jd_close"></a>
     </div>
+    <script>
+        var jd_close = document.getElementById("jd_close");
+        var top_banner = document.getElementById("top_banner");
+        jd_close.onclick = function ( ) {
+            top_banner.style.display = "none";
+        }
+    </script>
 </div>
 <!--京东的topbanner结束-->
 

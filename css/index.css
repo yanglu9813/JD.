@@ -10,6 +10,9 @@
     height: 604px;
     background: url(../images/banner.jpg) no-repeat top center;
 }
+.close-banner:hover {
+    background-position: bottom;
+}
 .main {
     position: relative;
 }
