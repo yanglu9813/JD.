@@ -229,22 +229,98 @@
     </a>
 </div>
 <div class="w main clearfix">
-    <div class="slider">
-        <a href="#"><img src="images/slider1.jpg"/></a>
+    <div class="slider" id="slider">
+        <a href="#"><img src="images/11.jpg" id="slider-img"/></a>
         <!--6个小圆点-->
         <ul class="circle">
-            <li class="current">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
+            <li class="current" id="circle1">1</li>
+            <li id="circle2">2</li>
+            <li id="circle3">3</li>
+            <li id="circle4">4</li>
+            <li id="circle5">5</li>
+            <li id="circle6">6</li>
         </ul>
         <!--左右2个小三角-->
-        <div class="arrow">
+        <div class="arrow" id="arr">
             <a href="#" class="arrow-l"><</a>
             <a href="#" class="arrow-r">></a>
         </div>
+        <script>
+            window.onload = function(){
+
+                var arr = document.getElementById("arr");
+                var slider = document.getElementById("slider");
+                slider.onmouseover = function(){
+                    arr.style.display = "block";  // 显示三角
+                }
+                slider.onmouseout = function(){
+                    arr.style.display = "none";  // 隐藏三角
+                }
+
+
+                var circle1 = document.getElementById("circle1");
+                var circle2 = document.getElementById("circle2");
+                var circle3 = document.getElementById("circle3");
+                var circle4 = document.getElementById("circle4");
+                var circle5 = document.getElementById("circle5");
+                var circle6 = document.getElementById("circle6");
+                var slider_img = document.getElementById("slider-img");
+                circle1.onmouseover = function(){
+                    slider_img.src = "images/11.jpg";
+                    circle1.style.backgroundColor = "#B61B1F";
+                    circle2.style.backgroundColor = "#3E3E3E";
+                    circle3.style.backgroundColor = "#3E3E3E";
+                    circle4.style.backgroundColor = "#3E3E3E";
+                    circle5.style.backgroundColor = "#3E3E3E";
+                    circle6.style.backgroundColor = "#3E3E3E";
+                }
+                circle2.onmouseover = function(){
+                    slider_img.src = "images/22.jpg";
+                    circle1.style.backgroundColor = "#3E3E3E";
+                    circle2.style.backgroundColor = "#B61B1F";
+                    circle3.style.backgroundColor = "#3E3E3E";
+                    circle4.style.backgroundColor = "#3E3E3E";
+                    circle5.style.backgroundColor = "#3E3E3E";
+                    circle6.style.backgroundColor = "#3E3E3E";
+                }
+                circle3.onmouseover = function(){
+                    slider_img.src = "images/33.jpg";
+                    circle1.style.backgroundColor = "#3E3E3E";
+                    circle2.style.backgroundColor = "#3E3E3E";
+                    circle3.style.backgroundColor = "#B61B1F";
+                    circle4.style.backgroundColor = "#3E3E3E";
+                    circle5.style.backgroundColor = "#3E3E3E";
+                    circle6.style.backgroundColor = "#3E3E3E";
+                }
+                circle4.onmouseover = function(){
+                    slider_img.src = "images/44.jpg";
+                    circle1.style.backgroundColor = "#3E3E3E";
+                    circle2.style.backgroundColor = "#3E3E3E";
+                    circle3.style.backgroundColor = "#3E3E3E";
+                    circle4.style.backgroundColor = "#B61B1F";
+                    circle5.style.backgroundColor = "#3E3E3E";
+                    circle6.style.backgroundColor = "#3E3E3E";
+                }
+                circle5.onmouseover = function(){
+                    slider_img.src = "images/55.jpg";
+                    circle1.style.backgroundColor = "#3E3E3E";
+                    circle2.style.backgroundColor = "#3E3E3E";
+                    circle3.style.backgroundColor = "#3E3E3E";
+                    circle4.style.backgroundColor = "#3E3E3E";
+                    circle5.style.backgroundColor = "#B61B1F";
+                    circle6.style.backgroundColor = "#3E3E3E";
+                }
+                circle6.onmouseover = function(){
+                    slider_img.src = "images/66.jpg";
+                    circle1.style.backgroundColor = "#3E3E3E";
+                    circle2.style.backgroundColor = "#3E3E3E";
+                    circle3.style.backgroundColor = "#3E3E3E";
+                    circle4.style.backgroundColor = "#3E3E3E";
+                    circle5.style.backgroundColor = "#3E3E3E";
+                    circle6.style.backgroundColor = "#B61B1F";
+                }
+            }
+        </script>
     </div>
     <div class="news">
         <div class="news-top">

@@ -44,6 +44,9 @@
 .slider .circle li.current {
     background-color: #B61B1F;
 }
+.arrow {
+    display: none;
+}
 .slider .arrow-l,
 .slider .arrow-r {
     position: absolute;
