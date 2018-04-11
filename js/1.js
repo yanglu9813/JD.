@@ -92,5 +92,4 @@ window.onload = function(){
         mask.style.display = "none";
         box.style.display = "none";
     }
-
 }
