@@ -92,4 +92,12 @@ window.onload = function(){
         mask.style.display = "none";
         box.style.display = "none";
     }
+
+    //12张图片遍历
+    //找到所有的i
+    var iis = document.getElementById("iconsprite").getElementsByTagName("i");
+    for(var i=0; i<iis.length; i++)
+    {
+        iis[i].style.backgroundPosition ="-25px "+(-25*i)+"px";
+    }
 }
