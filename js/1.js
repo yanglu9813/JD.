@@ -1,83 +1,45 @@
 window.onload = function(){
     // 关闭topbanner的图片
     var jd_close = document.getElementById("jd_close");
-    var top_banner = document.getElementById("top_banner");
     jd_close.onclick = function ( ) {
-        top_banner.style.display = "none";
-    }
-
-    // 三角箭头
-    var arr = document.getElementById("arr");
-    var slider = document.getElementById("slider");
-    slider.onmouseover = function(){
-        arr.style.display = "block";  // 显示三角
-    }
-    slider.onmouseout = function(){
-        arr.style.display = "none";  // 隐藏三角
+        this.parentNode.style.display = "none";
     }
 
     // 轮播
-    var circle1 = document.getElementById("circle1");
-    var circle2 = document.getElementById("circle2");
-    var circle3 = document.getElementById("circle3");
-    var circle4 = document.getElementById("circle4");
-    var circle5 = document.getElementById("circle5");
-    var circle6 = document.getElementById("circle6");
-    var slider_img = document.getElementById("slider-img");
-    circle1.onmouseover = function(){
-        slider_img.src = "images/11.jpg";
-        circle1.style.backgroundColor = "#B61B1F";
-        circle2.style.backgroundColor = "#3E3E3E";
-        circle3.style.backgroundColor = "#3E3E3E";
-        circle4.style.backgroundColor = "#3E3E3E";
-        circle5.style.backgroundColor = "#3E3E3E";
-        circle6.style.backgroundColor = "#3E3E3E";
+    var scroll = document.getElementById("scroll");
+    var circle = document.createElement("div");
+    circle.setAttribute("class", "circle");//更改类名
+    scroll.appendChild(circle);
+    var ul = document.getElementById("ul");
+    var lis = ul.children;
+    //大盒子里要放入n个小的span
+    for (var i = 0; i < lis.length; i++) {
+        var newspan = document.createElement("span");
+        //创建6次span
+        newspan.innerHTML = i+1;
+        circle.appendChild(newspan);
     }
-    circle2.onmouseover = function(){
-        slider_img.src = "images/22.jpg";
-        circle1.style.backgroundColor = "#3E3E3E";
-        circle2.style.backgroundColor = "#B61B1F";
-        circle3.style.backgroundColor = "#3E3E3E";
-        circle4.style.backgroundColor = "#3E3E3E";
-        circle5.style.backgroundColor = "#3E3E3E";
-        circle6.style.backgroundColor = "#3E3E3E";
+    var spans = circle.children;
+    for (var i = 0; i < spans.length; i++) {
+        spans[i].onmouseover = function(){
+        for (var j = 0; j < spans.length; j++) {
+            spans[j].setAttribute("class","");
+        }
+        this.setAttribute("class","current");
+        }
     }
-    circle3.onmouseover = function(){
-        slider_img.src = "images/33.jpg";
-        circle1.style.backgroundColor = "#3E3E3E";
-        circle2.style.backgroundColor = "#3E3E3E";
-        circle3.style.backgroundColor = "#B61B1F";
-        circle4.style.backgroundColor = "#3E3E3E";
-        circle5.style.backgroundColor = "#3E3E3E";
-        circle6.style.backgroundColor = "#3E3E3E";
+    
+    // 三角箭头
+    var arr = document.getElementById("arr");
+    var scroll = document.getElementById("scroll");
+    scroll.onmouseover = function(){
+        arr.style.display = "block";  // 显示三角
     }
-    circle4.onmouseover = function(){
-        slider_img.src = "images/44.jpg";
-        circle1.style.backgroundColor = "#3E3E3E";
-        circle2.style.backgroundColor = "#3E3E3E";
-        circle3.style.backgroundColor = "#3E3E3E";
-        circle4.style.backgroundColor = "#B61B1F";
-        circle5.style.backgroundColor = "#3E3E3E";
-        circle6.style.backgroundColor = "#3E3E3E";
+    scroll.onmouseout = function(){
+        arr.style.display = "none";  // 隐藏三角
     }
-    circle5.onmouseover = function(){
-        slider_img.src = "images/55.jpg";
-        circle1.style.backgroundColor = "#3E3E3E";
-        circle2.style.backgroundColor = "#3E3E3E";
-        circle3.style.backgroundColor = "#3E3E3E";
-        circle4.style.backgroundColor = "#3E3E3E";
-        circle5.style.backgroundColor = "#B61B1F";
-        circle6.style.backgroundColor = "#3E3E3E";
-    }
-    circle6.onmouseover = function(){
-        slider_img.src = "images/66.jpg";
-        circle1.style.backgroundColor = "#3E3E3E";
-        circle2.style.backgroundColor = "#3E3E3E";
-        circle3.style.backgroundColor = "#3E3E3E";
-        circle4.style.backgroundColor = "#3E3E3E";
-        circle5.style.backgroundColor = "#3E3E3E";
-        circle6.style.backgroundColor = "#B61B1F";
-    }
+
+
     // 登录
     var login = document.getElementById("login");
     var mask = document.getElementById("mask");

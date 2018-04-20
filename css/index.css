@@ -29,19 +29,19 @@
     left:50%;
     margin-left: -66px;
 }
-.slider .circle li {
+.slider .circle span {
+    float: left;
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: #3E3E3E;
-    float: left;
+    color: #fff;
     text-align: center;
     line-height: 18px;
-    color: #fff;
-    margin: 0 2px;
+    margin-right: 10px;
     cursor: pointer;
 }
-.slider .circle li.current {
+.slider .circle .current {
     background-color: #B61B1F;
 }
 .arrow {
