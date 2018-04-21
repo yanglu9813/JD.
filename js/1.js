@@ -20,12 +20,16 @@ window.onload = function(){
         circle.appendChild(newspan);
     }
     var spans = circle.children;
+    spans[0].setAttribute("class","current");
     for (var i = 0; i < spans.length; i++) {
+        spans[i].index = i;
         spans[i].onmouseover = function(){
         for (var j = 0; j < spans.length; j++) {
             spans[j].setAttribute("class","");
+            lis[j].setAttribute("class","arrow");
         }
         this.setAttribute("class","current");
+        lis[this.index].setAttribute("class","");
         }
     }
     
