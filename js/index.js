@@ -5,6 +5,15 @@ window.onload = function(){
         this.parentNode.style.display = "none";
     }
 
+    //搜索框
+    var tskq = document.getElementById("tskq");
+    tskq.onclick = function ( ){
+        if (tskq.value == "图书开抢") {
+            tskq.value = "";
+            tskq.style.color = "#00050B";
+        }
+    }
+
     // 轮播
     var scroll = document.getElementById("scroll");
     var circle = document.createElement("div");
@@ -48,16 +57,49 @@ window.onload = function(){
     var login = document.getElementById("login");
     var mask = document.getElementById("mask");
     var box = document.getElementById("box");
-    login.onclick = function ( ) {
+    login.onclick = function ( ){
         mask.style.display = "block";
         box.style.display = "block";
     }
     // 关闭登录
     var close_all = document.getElementById("close_all");
-    close_all.onclick = function ( ) {
+    close_all.onclick = function ( ){
         mask.style.display = "none";
         box.style.display = "none";
     }
+
+    //登录
+    var name = document.getElementById("name");
+    var pwd = document.getElementById("pwd");
+    var loginbtn = document.getElementById("loginbtn");
+    name.onclick = function ( ){
+        if (name.value == "用户名") {
+            name.value = "";
+            name.style.color = "#666";
+        }
+    }
+    pwd.onclick = function ( ){
+        if (pwd.value == "密码") {
+            pwd.value = "";
+            pwd.style.color = "#666";
+            pwd.type = "password";
+        }
+    }
+    loginbtn.onclick = function ( ){
+        if (name.value == "杨璐" && pwd.value == "123") {
+            alert("登录成功");
+            mask.style.display = "none";
+            box.style.display = "none";
+            login.innerHTML = "杨璐";
+            login.onclick = function ( ){
+
+            }
+        }else{
+            alert("请输入正确的用户名和密码！");
+        }
+    }
+
+
 
     //12张图片遍历
     //找到所有的i

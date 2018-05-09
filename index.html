@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>京东</title>
+    <title>某东</title>
     <link rel="stylesheet" href="css/base.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="shortcut icon" href="favicon.ico"/>
-    <script type="text/javascript" src="js/1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 <!--京东的头部导航开始-->
 <div id="mask"></div>
 <div id="box">
     <span id="close_all">×</span>
+    <h1>用户登陆</h1>
+    <input type="text" maxlength="6" class="name" id="name" value="用户名">
+    <input type="text" class="pwd" id="pwd" value="密码">
+    <input type="submit" value="登陆" class="loginbtn" id="loginbtn">
+    <a href="register.html">立即注册 ></a>
 </div>
 <div class="shortcut">
     <div class="w">
@@ -30,21 +35,21 @@
         <div class="fr">
             <ul>
                 <li>
-                    您好，请<a href="javascript:;" id="login" class="col-red">登录</a>
-                    免费<a href="#" class="col-red">注册</a>
+                    您好，<a href="javascript:;" id="login" class="col-red">请登录</a>
+                    免费<a href="register.html" class="col-red">注册</a>
                 </li>
                 <li class="line"></li>
                 <li><a href="#">我的订单</a></li>
                 <li class="line"></li>
-                <li class="fore"><a href="#">我的京东<i><s>◇</s></i></a></li>
+                <li class="fore"><a href="#">我的某东<i><s>◇</s></i></a></li>
                 <li class="line"></li>
-                <li><a href="#">京东会员</a></li>
+                <li><a href="#">某东会员</a></li>
                 <li class="line"></li>
                 <li><a href="#">企业采购</a></li>
                 <li class="line"></li>
-                <li class="fore tel-jd"><a href="#"><i class="tel"></i>手机京东<i><s>◇</s></i></a></li>
+                <li class="fore tel-jd"><a href="#"><i class="tel"></i>手机某东<i><s>◇</s></i></a></li>
                 <li class="line"></li>
-                <li class="fore"><a href="#">关注京东<i><s>◇</s></i></a></li>
+                <li class="fore"><a href="#">关注某东<i><s>◇</s></i></a></li>
                 <li class="line"></li>
                 <li class="fore"><a href="#">客户服务<i><s>◇</s></i></a></li>
                 <li class="line"></li>
@@ -67,11 +72,11 @@
 
 <div class="w clearfix">
     <div class="logo">
-        <a href="http://www.jd.com" target="_blank" class="jd-a" title="叮咚">京东</a>
+        <a href="http://www.jd.com" target="_blank" class="jd-a" title="叮咚">某东</a>
         <div class="db11"><a href="#"><img src="images/dong.gif"></a></div>
     </div>
     <div class="search">
-        <input type="text" value="图书开抢">
+        <input type="text" id="tskq" value="图书开抢">
         <button class="">搜索</button>
     </div>
     <div class="car">
@@ -101,101 +106,145 @@
                 </div>
                 <div class="dd">
                     <ul>
-                        <li><a href="#">家用电器</a></li>
                         <li>
-                            <a href="#">手机</a>
-                            <span>/</span>
-                            <a href="#">数码</a>
-                            <span>/</span>
-                            <a href="#">京东通信</a>
+                            <div>
+                                <a href="#">家用电器</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">电脑</a>
-                            <span>/</span>
-                            <a href="#">办公</a>
+                            <div>
+                                <a href="#">手机</a>
+                                <span>/</span>
+                                <a href="#">数码</a>
+                                <span>/</span>
+                                <a href="#">某东通信</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">家居</a>
-                            <span>/</span>
-                            <a href="#">家具</a>
-                            <span>/</span>
-                            <a href="#">家装</a>
-                            <span>/</span>
-                            <a href="#">厨具</a>
+                            <div>
+                                <a href="#">电脑</a>
+                                <span>/</span>
+                                <a href="#">办公</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">男装</a>
-                            <span>/</span>
-                            <a href="#">女装</a>
-                            <span>/</span>
-                            <a href="#">内衣</a>
-                            <span>/</span>
-                            <a href="#">珠宝</a>
+                            <div>
+                                <a href="#">家居</a>
+                                <span>/</span>
+                                <a href="#">家具</a>
+                                <span>/</span>
+                                <a href="#">家装</a>
+                                <span>/</span>
+                                <a href="#">厨具</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">个护化妆</a>
-                            <span>/</span>
-                            <a href="#">清洁用品</a>
+                            <div>
+                                <a href="#">男装</a>
+                                <span>/</span>
+                                <a href="#">女装</a>
+                                <span>/</span>
+                                <a href="#">内衣</a>
+                                <span>/</span>
+                                <a href="#">珠宝</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">鞋靴</a>
-                            <span>/</span>
-                            <a href="#">箱包</a>
-                            <span>/</span>
-                            <a href="#">钟表</a>
-                            <span>/</span>
-                            <a href="#">奢侈品</a>
+                            <div>
+                                <a href="#">个护化妆</a>
+                                <span>/</span>
+                                <a href="#">清洁用品</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">运动户外</a>
+                            <div>
+                                <a href="#">鞋靴</a>
+                                <span>/</span>
+                                <a href="#">箱包</a>
+                                <span>/</span>
+                                <a href="#">钟表</a>
+                                <span>/</span>
+                                <a href="#">奢侈品</a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">汽车</a>
-                            <span>/</span>
-                            <a href="#">汽车用品</a>
+                            <div>
+                                <a href="#">运动户外</a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">母婴</a>
-                            <span>/</span>
-                            <a href="#">玩具乐器</a>
+                            <div>
+                                <a href="#">汽车</a>
+                                <span>/</span>
+                                <a href="#">汽车用品</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">食品</a>
-                            <span>/</span>
-                            <a href="#">酒类</a>
-                            <span>/</span>
-                            <a href="#">生鲜</a>
-                            <span>/</span>
-                            <a href="#">特产</a>
+                            <div>
+                                <a href="#">母婴</a>
+                                <span>/</span>
+                                <a href="#">玩具乐器</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">营养保健</a>
+                            <div>
+                                <a href="#">食品</a>
+                                <span>/</span>
+                                <a href="#">酒类</a>
+                                <span>/</span>
+                                <a href="#">生鲜</a>
+                                <span>/</span>
+                                <a href="#">特产</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <span>/</span>
-                            <a href="#">图书</a>
-                            <span>/</span>
-                            <a href="#">音像</a>
-                            <span>/</span>
-                            <a href="#">电子书</a>
+                            <div>
+                                <a href="#">营养保健</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">彩票</a>
-                            <span>/</span>
-                            <a href="#">旅行</a>
-                            <span>/</span>
-                            <a href="#">充值</a>
-                            <span>/</span>
-                            <a href="#">票务</a>
+                            <div>
+                                <a href="#">图书</a>
+                                <span>/</span>
+                                <a href="#">音像</a>
+                                <span>/</span>
+                                <a href="#">电子书</a>
+                            </div>
+                            
                         </li>
                         <li>
-                            <a href="#">理财</a>
-                            <span>/</span>
-                            <a href="#">众筹</a>
-                            <span>/</span>
-                            <a href="#">白条</a>
-                            <span>/</span>
-                            <a href="#">保险</a>
+                            <div>
+                                <a href="#">彩票</a>
+                                <span>/</span>
+                                <a href="#">旅行</a>
+                                <span>/</span>
+                                <a href="#">充值</a>
+                                <span>/</span>
+                                <a href="#">票务</a>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#">理财</a>
+                                <span>/</span>
+                                <a href="#">众筹</a>
+                                <span>/</span>
+                                <a href="#">白条</a>
+                                <span>/</span>
+                                <a href="#">保险</a>
+                            </div>
+                            
                         </li>
                     </ul>
                 </div>
@@ -249,7 +298,7 @@
     <div class="news">
         <div class="news-top">
             <div class="dt">
-                <h3>京东快报</h3>
+                <h3>某东快报</h3>
                 <a href="#">更多 ></a>
             </div>
             <div class="dd">
@@ -467,7 +516,7 @@
                 <br>Copyright © 2004 - 2018  京东JD.com 版权所有 | 消费者维权热线：
                 4006067733经营证照
 
-                <br>京东旗下网站：京东钱包 | 京东云
+                <br>某东旗下网站：某东钱包 | 某东云
             </div>
             <div class="message">
                 <a href="#"><img src="images/mess.png"></a>
