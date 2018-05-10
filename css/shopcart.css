@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.shopcart_mian {
+	margin: 0 auto;
+	width: 1000px;
+}
+.shopcartT {
+	height: 50px;
+	border: 2px solid #EEEEEE;
+}
+.shopcartT span {
+	float: left;
+	font: 16px "microsoft yahei";
+	line-height: 50px;
+	padding-left: 30px;
+}
+.shopcartT ul {
+	float: right;
+	
+}
+.shopcartT ul li {
+	float: left;
+	font: 16px "microsoft yahei";
+	line-height: 50px;
+	width: 130px;
+}
+.shopcartM {
+	height: 100px;
+	border: 2px solid #EEEEEE;
+	position: relative;
+}
+.shopcartM .check {
+	position: absolute;
+	left: 5px;
+	top: 10px;
+}
+.shopcartM img{
+	position: absolute;
+	left: 30px;
+}
+.shopcartM h1{
+	position: absolute;
+	left: 150px;
+}
+.shopcartM .price {
+	position: absolute;
+	left: 450px;
+}
+.shopcartM .number {
+	position: absolute;
+	left: 590px;
+}
+.shopcartM .number input {
+	width: 20px;
+	text-align: center;
+	border: 1px solid #D8D8D8;
+}
+.shopcartM .eachPrice {
+	position: absolute;
+	left: 740px;
+}
+.shopcartM .delete {
+	position: absolute;
+	left: 870px;
+}
+.shopcartB {
+	height: 50px;
+	background-color: #F1F1F1;
+}

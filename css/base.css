@@ -188,11 +188,13 @@ s,i,em{font-style:normal;text-decoration:none;}
     height: 36px;
     background-color: #B61D1D;
     float: left;
-    color: #fff;
     font: 16px/36px "microsoft yahei";
 
     /*把箭头变成手*/
     cursor: pointer;
+}
+.search button a {
+    color: #fff;
 }
 .car {
     width: 77px;

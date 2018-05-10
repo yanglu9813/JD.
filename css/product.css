@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.productTop {
+	height: 400px;
+	margin-top: 20px;
+}
+.productTL{
+	width: 400px;
+	height: 400px;
+	float: left;
+	border: 1px solid #DFDFDF;
+}
+.productTR {
+	position: relative;
+	width: 780px;
+	height: 400px;
+	float: right;
+}
+.productTR h1 {
+	display: block;
+	font: 20px "microsoft yahei";
+	font-weight: 900;
+	color: #272822;
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+.productInfo {
+	width: 780px;
+	height: 100px;
+	background-color: #F1F1F1;
+	position: absolute;
+	top: 70px;
+}
+.productInfo li{
+	margin: 10px 30px;
+
+}
+.productInfo li dt {
+	float: left;
+	font: 20px "microsoft yahei";
+	color: #6C6D69;
+}
+.productInfo li dd {
+	margin-left: 15px;
+	float: left;
+	font: 14px "microsoft yahei";
+	font-weight: 700;
+	color: #B61D1D;
+}
+.productInfo li span {
+	font: 24px "microsoft yahei";
+	color: #B61D1D;
+}
+.productInfo li del {
+	font: 24px "microsoft yahei";
+	color: #ADAFB3;
+}
+.send {
+	margin-left: 30px;
+	font: 20px "microsoft yahei";
+	position: absolute;
+	top: 220px;
+}
+.xiaoliang {
+	margin-left: 20px;
+	position: absolute;
+	top: 270px;
+}
+.xiaoliang li {
+	float: left;
+	margin: 0px 10px;
+}
+.productTR a {
+	margin-left: 30px;
+	position: absolute;
+	top: 340px;
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #FFEDED;
+	border: 1px solid #F03726;
+	color: #F03726;
+	text-align: center;
+}
+.productTR .add {
+	left: 150px;
+	background-color: #F03726;
+	border: 1px solid #F03726;
+	color: #FFEDED;
+}
+
+
+.productBottom {
+	margin-top: 30px;
+}
+.productBottom ul {
+	margin-bottom: 10px;
+	height: 40px;
+	border-bottom: 2px solid #B61D1D;
+}
+.productBottom li {
+	border: 1px solid #B61D1D;
+	border-bottom: 0px;
+	float: left;
+	width: 220px;
+	text-align: center;
+	font: 16px/40px "microsoft yahei";
+	font-weight: 900;
+	color: #000000;
+}
+.productBottom .first {
+	background-color: #F03726;
+}
+.productBottom img {
+	margin: 0px 5px;
+}

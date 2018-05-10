@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.searchAbout {
+	/* display: block; */
+	padding:10px;
+	font: 12px "microsoft yahei";
+	color: #272822;
+}
+.searchOrder {
+	height: 30px;
+	border: 1px solid #DFDFDF;
+}
+.searchOrder li {
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 30px;
+	border-right: 2px solid #DFDFDF;
+}
+.zhpx {
+	background-color: #F5F5F5;
+}
+.productBox {
+	margin: 20px 0;
+}
+.productBoxes {
+	width: 220px;
+	height: 300px;
+	border: 1px solid #B1191A;
+	margin: 10px;
+	float: left;
+}
+.describe{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	margin-top: 8px;
+}
+.price {
+	float: left;
+	font: 10px "Microsoft Yahei";
+	font-weight: 700;
+	color: #B1191A;
+	margin: 8px 8px;
+}
+.salesVolume {
+	float: right;
+	font: 10px "Microsoft Yahei";
+	color: #333333;
+	margin: 8px 8px;
+}
