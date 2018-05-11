@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.pay_main {
+	margin: 20px auto;
+	width: 1000px;
+}
+.pay_main .recieve {
+	font: 16px "microsoft yahei";
+	font-weight: 700;
+	margin: 20px;
+}
+.pay_main .img {
+	cursor: text;
+	margin: 20px 0px;
+}
+.payB span {
+	float: right;
+	font: 16px "microsoft yahei";
+	font-weight: 700;
+	margin: 10px;
+}
+.red {
+	color: #FF5500;
+}
+
+.payB img {
+	margin-top: 10px;
+	margin-left: 563px;
+	cursor: text;
+} 
+.payB a{
+	display: inline-block;
+	width: 125px;
+	height: 35px;
+	margin: 10px 0 50px 875px;
+	background-color: #FF4400;
+	text-align: center;
+	font: 15px/35px "microsoft yahei";
+	color: #FFFFFF;
+}

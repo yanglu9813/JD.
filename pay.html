@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>结算页面</title>
     <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/shopcart.css"/>
+    <link rel="stylesheet" href="css/pay.css"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <script type="text/javascript" src="js/index.js"></script>
 </head>
@@ -61,7 +63,7 @@
             <button><a href="search.html">搜索</a></button>
         </div>
         <div class="car">
-            <a href="#">购物车</a>
+            <a href="shopcart.html">购物车</a>
             <span class="icon1"></span>
             <span class="icon2">></span>
             <span class="icon3">6</span>
@@ -78,7 +80,80 @@
         </div>
     </div>
 
-
+<!-- 页面主体部分开始 -->
+    <div class="pay_main">
+        <span class="recieve">收货地址</span>
+        <div class="img">
+        <img src="images/address1.png">
+        <img src="images/address2.png">           
+        </div>
+        <div class="shopcartT">
+            <span>
+                商品信息
+            </span>
+            <ul>
+                <li>单价</li>
+                <li>数量</li>
+                <li>金额</li>
+                <li>操作</li>
+            </ul>
+        </div>
+        <div class="shopcartM">
+            <input type="checkbox" class="check">
+            <img src="images/0001.jpg">
+            <a href="product.html">良品铺子 手剥松子218g 坚果炒货 巴西松子</a>
+            <div class="price">
+                <span> 56.90</span>
+                <del>98.00</del>
+            </div>
+            <div class="number">
+                <input type="button" value="-">
+                <input type="text" value="1">
+                <input type="button" value="+">
+            </div>
+            <span class="eachPrice">56.9</span>
+            <span class="delete">删除</span>
+        </div>
+        <div class="shopcartM">
+            <input type="checkbox" class="check">
+            <img src="images/0001.jpg">
+            <a href="product.html">良品铺子 手剥松子218g 坚果炒货 巴西松子</a>
+            <div class="price">
+                <span> 56.90</span>
+                <del>98.00</del>
+            </div>
+            <div class="number">
+                <input type="button" value="-">
+                <input type="text" value="1">
+                <input type="button" value="+">
+            </div>
+            <span class="eachPrice">56.9</span>
+            <span class="delete">删除</span>
+        </div>
+        <div class="shopcartM">
+            <input type="checkbox" class="check">
+            <img src="images/0001.jpg">
+            <a href="product.html">良品铺子 手剥松子218g 坚果炒货 巴西松子</a>
+            <div class="price">
+                <span> 56.90</span>
+                <del>98.00</del>
+            </div>
+            <div class="number">
+                <input type="button" value="-">
+                <input type="text" value="1">
+                <input type="button" value="+">
+            </div>
+            <span class="eachPrice">56.9</span>
+            <span class="delete">删除</span>
+        </div>
+        <div class="payB">
+            <span class="red">244.00</span>
+            <span>合计（含运费） ¥</span>
+            <img src="images/pay.png">
+            <a href="success.html">提交支付</a>
+        </div>
+    </div>
+<!-- 页面主体部分结束 -->
 
 
 <!--页面底部开始-->

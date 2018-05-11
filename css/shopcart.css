@@ -1,11 +1,12 @@
 @charset "UTF-8";
 .shopcart_mian {
-	margin: 0 auto;
+	margin: 20px auto;
 	width: 1000px;
 }
 .shopcartT {
 	height: 50px;
 	border: 2px solid #EEEEEE;
+	padding-left: 50px;
 }
 .shopcartT span {
 	float: left;
@@ -31,22 +32,30 @@
 .shopcartM .check {
 	position: absolute;
 	left: 5px;
-	top: 10px;
+	top: 44px;
 }
 .shopcartM img{
 	position: absolute;
+	top: 10px;
 	left: 30px;
 }
-.shopcartM h1{
+.shopcartM a{
 	position: absolute;
-	left: 150px;
+	left: 140px;
+	top: 40px;
+	font: 14px "microsoft yahei";
+	font-weight: 700;
 }
 .shopcartM .price {
 	position: absolute;
+	font: 14px "microsoft yahei";
+	top: 40px;
 	left: 450px;
 }
 .shopcartM .number {
 	position: absolute;
+	font: 14px "microsoft yahei";
+	top: 40px;
 	left: 590px;
 }
 .shopcartM .number input {
@@ -56,13 +65,39 @@
 }
 .shopcartM .eachPrice {
 	position: absolute;
+	font: 14px "microsoft yahei";
+	top: 40px;
 	left: 740px;
+
 }
 .shopcartM .delete {
 	position: absolute;
+	font: 14px "microsoft yahei";
+	top: 40px;
 	left: 870px;
+	cursor: pointer;
 }
 .shopcartB {
+	margin-top: 30px;
+	margin-bottom: 100px;
 	height: 50px;
+	line-height: 50px;
 	background-color: #F1F1F1;
+	padding-left: 700px;
+	position: relative;
+}
+.shopcartB span {
+	margin-right: 20px;
+	font: 14px "microsoft yahei";
+	font-weight: 700;
+}
+.shopcartB a {
+	display: inline-block;
+	width: 80px;
+	height: 50px;
+	position: absolute;
+	background-color: #FF4400;
+	text-align: center;
+	font: 15px/50px "microsoft yahei";
+	color: #FFFFFF;
 }

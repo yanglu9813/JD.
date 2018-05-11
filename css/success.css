@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.success_main {
+	margin: 50px auto;
+	margin-bottom: 150px;
+	width: 1000px;
+}
+.success_main div {
+	margin: 15px 50px;
+	width: 360px;
+	height: 120px;
+	border: 1px solid #F03726;
+}
+.success_main p {
+	margin: 20px 50px;
+}
+.success_main div p {
+	margin: 16px;
+}
